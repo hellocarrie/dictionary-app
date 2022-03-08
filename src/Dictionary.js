@@ -12,15 +12,14 @@ export default function Dictionary() {
     setResults(response.data[0]);
     console.log(response.data[0].meanings[0].definitions[0].definition);
   }
-  function handleKeywordChange(event) {
-    setKeyword(event.target.value);
-  }
-
-  let apiURL = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
-  axios.get(apiURL).then(handleResponse);
 
   function search(event) {
     event.preventDefault();
+    let apiURL = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
+    axios.get(apiURL).then(handleResponse);
+  }
+  function handleKeywordChange(event) {
+    setKeyword(event.target.value);
   }
 
   return (
