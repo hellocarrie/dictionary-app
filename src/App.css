@@ -10,3 +10,11 @@
 bg {
   background-color: whitesmoke;
 }
+footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+h2 {
+  color: slategrey;
+}

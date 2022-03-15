@@ -26,6 +26,7 @@ export default function Dictionary() {
     <div className="Dictionary">
       <h1 class="title">Dictionary</h1>
       <section>
+        <h4> Please enter a term to search for</h4>
         <form onSubmit={search}>
           <input type="search" onChange={handleKeywordChange} />
         </form>
@@ -36,7 +37,18 @@ export default function Dictionary() {
       <br />
       <section>
         <Results results={results} />
+        <search defaultword="plant" />
       </section>
+      <footer>
+        <a
+          href="https://github.com/hellocarrie/dictionary-app"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Open-source code
+        </a>{" "}
+        by Carrie
+      </footer>
     </div>
   );
 }
