@@ -1,0 +1,6 @@
+audio {
+  width: 100px;
+  height: 25px;
+  filter: sepia(50%) saturate(20%) grayscale(1) contrast(99%) invert(12%);
+  border-radius: 10%;
+}
